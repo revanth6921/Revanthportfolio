@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="images/cloud.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery" id="images">
+        <img src="images/password.jpg" onclick="openFullImg(this.src)">
+        <img src="images/html.jpg" onclick="openFullImg(this.src)">
+        <img src="images/python.jpg" onclick="openFullImg(this.src)">
+        <img src="images/timejone.jpg" onclick="openFullImg(this.src)">
+        <img src="images/ml.jpg" onclick="openFullImg(this.src)">
+        <img src="images/ds.jpg" onclick="openFullImg(this.src)">
+        <img src="images/cloud.jpg" onclick="openFullImg(this.src)">
+        <img src="images/ds1.jpg" onclick="openFullImg(this.src)">
+    </div>
+<script>
+
+    var fullImgBox=document.getElementById("fullImgBox");
+    var fullImg=document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display="flex";
+        fullImg.src=pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display="none";
+    }
+
+</script>
+</body>
+</html>
